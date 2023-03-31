@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilizando header - cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    padding: 15px;
+}
+
+.logo-menu {
+    display: flex;
+}
+
+.logo-menu > img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.botao-menu {
+    font-size: 20px;
+}
+
+.botao-branco {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.botao-branco:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px gray;
+    background-color: lightgray
+}
+
+.botao-preto {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main > img {
+    width: 1300px;
+}
+
+.texto1 {
+    margin-top: 20px;
+    background-color: rgb(171, 243, 171);
+    text-align: center;
+    height: 100px;
+}
+
+.texto1 > p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2px 7px;
+}
+
+.card-com-imagem {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-com-imagem > img {
+    width: 50%;
+}
+
+.card-com-imagem > div {
+    background-color: rgb(171, 243, 171);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-com-imagem2 {
+    display: flex;
+}
+
+.card-com-imagem2 > img {
+    width: 50%;
+    float: right;
+}
+
+.card-com-imagem2 > div {
+    background-color: rgb(171, 243, 171);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    .card-com-imagem {
+        flex-direction: column;
+    }
+    .card-com-imagem > img {
+        width: 100%;
+    }
+    .card-com-imagem > div {
+        width: 100%;
+    }
+}
